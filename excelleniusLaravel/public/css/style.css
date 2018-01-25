@@ -1,0 +1,452 @@
+/*** 
+
+Table of Contents:
+-----------------------------------------------------------------------------* 
+    01 - Login Form
+    02 - Navbar
+    03 - Try Out Container
+    04 - Parlsey Error
+    06 - Video Preview
+    07 - Features
+    08 - Speciality
+    09 - Image-Content Blocks
+    10 - Screenshots
+    11 - Developers
+    12 - Testimonial
+    13 - Pricing table
+    14 - Subscribe Form
+    15 - Contact us
+    16 - Footer Section
+    17 - Responsive Styles
+-----------------------------------------------------------------------------* 
+
+/* ///////////////////////////////////////////////////////////////////// 
+// 01 - Login Form 
+/////////////////////////////////////////////////////////////////////*/
+
+.expl-container {
+    box-shadow: -38px 36px 130px -22px rgba(0, 0, 0, 0.75);
+    padding: 120px 40px;
+    position: relative;
+    background: url('css/403540791-student-wallpapers.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.expl-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #0b202c, #3e474f);
+    opacity: .9;
+}
+
+.signup-text {
+    /* padding-right: 40px;
+            padding-left: 20px;
+            padding-top: 40px; */
+    padding-bottom: 35px;
+    position: inherit;
+    font-size: 35px;
+    color: white;
+    font-weight: 300;
+}
+
+.signup-text:last-child {
+    padding-top: 0px;
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+}
+
+.sign-container {
+    background: white;
+    padding: 120px 100px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.25em;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+label {
+    color: #9d9d9d;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    pointer-events: none;
+    letter-spacing: 1px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+label.inactive {
+    font-size: 0;
+}
+
+
+/* .form-control:focus~label,
+        .form-control:valid~label {
+            color: #80bdff;
+            top: -22px;
+            font-size: 15px;
+        } */
+
+label .req {
+    margin: 2px;
+    color: #3e474f;
+}
+
+label.active {
+    left: 6px;
+    top: -22px;
+    font-size: 15px;
+}
+
+label.active .req {
+    opacity: 0;
+}
+
+label.highlight {
+    color: #3e474f;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.none-display {
+    display: none;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+// 02 - Navbar
+/////////////////////////////////////////////////////////////////////*/
+
+
+.brand-border {
+    border-right: 2px solid rgba(179, 179, 179, 0.527);
+    padding-right: 28px;
+}
+
+.brand-border:hover {
+    border-right: 2px solid white;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(179, 179, 179, 0.527)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+// 03 - Try Out Container
+/////////////////////////////////////////////////////////////////////*/
+
+.tryout-box {
+    border-radius: 5px;
+    max-width: 1200px;
+    height: 1000px;
+    background-color: white;
+}
+
+.search-container {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.534);
+    box-shadow: 0 1px 0 0 #e8ebed;
+    border-radius: 4px 4px 0 0;
+}
+
+
+
+.search-border {
+    border-radius: 100px;
+    border: 2px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #a9aeb3;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, .25);
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, .25);
+}
+
+.btn-outline-grey {
+    color: #7b8b8e;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 50px;
+    border-color: #a9aeb3;
+}
+
+.btn-outline-grey:hover {
+    color: black;
+    border-color: #838383;
+}
+
+.tryout-container {
+    border-radius: 5px;
+    max-width: 1200px;
+    height: 1000px;
+    padding: 0 30px;
+}
+
+.card-border {
+    background-color: transparent;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: 0;
+}
+
+.text-titlecard:hover {
+    text-decoration: underline;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+// 04 - Parlsey Error
+/////////////////////////////////////////////////////////////////////*/
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+    color: #B94A48;
+    margin: 2px 0 3px;
+    padding: 4px 7px;
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    opacity: 0;
+    transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+}
+
+.parsley-errors-list.filled {
+    opacity: 1;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+// 04 - Paralax
+/////////////////////////////////////////////////////////////////////*/
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed = parallax
+    scroll = normal
+  */
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url('writing-notes-idea-conference.jpg');
+    min-height: 500px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: rgba(62 ,71 ,79, .125);
+    opacity: 1;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+// 04 - Components
+/////////////////////////////////////////////////////////////////////*/
+.tags {
+    display: inline-block;
+    border-radius: 100px;
+    background: transparent;
+    border: 2px solid rgba(48, 73, 97, 0.1);
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 32px;
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+// 04 - Utilities
+/////////////////////////////////////////////////////////////////////*/
+.red-border{
+     border: 2px solid #FF6F69;
+}
+
+.red-text{
+    color: #FF6F69;
+}
+
+.blue-border {
+    border: 2px solid #3498DB;
+}
+
+.blue-text {
+    color: #3498DB;
+}
+
+.green-border {
+    border: 2px solid #34DB59;
+}
+
+.green-text {
+    color: #34DB59;
+}
+
+.purple-border {
+    border: 2px solid #AC34DB;
+}
+
+.purle-text {
+    color: #AC34DB;
+}
+
+.orange-border {
+    border: 2px solid #FFC300;
+}
+
+.orange-text {
+    color: #FFC300;
+}
+
+.black-border {
+    border: 2px solid black;
+}
+
+.black-text {
+    color: black;
+}
+
+.bg-dark2 {
+    background-color: #3e474f;
+}
+
+.bg-blue {
+    background-color: #64b5f6;
+}
+
+.text-grey {
+    color: #b2bbbd!important;
+}
+
+.text-grey:hover {
+    color: white!important;
+}
+
+.text-grey2 {
+    color: #7b8b8e;
+}
+
+.text-grey2:hover {
+    color: black;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+
+.link-disable {
+    pointer-events: none;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+// 04 - Responsive
+/////////////////////////////////////////////////////////////////////*/
+@media(max-width:568px) {
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+        background-attachment: scroll;
+    }
+}
+
+
+
+@media (max-width: 840px){
+    .sign-container{
+        padding: 120px 30px;
+    }
+
+}
+
+small {
+    font-size: 13px;
+    color: #7b8b8e;
+    margin: 0;
+}
+
+body {
+    background-color: #EDEFF0;
+}
